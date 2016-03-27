@@ -1,7 +1,11 @@
 Shiny app: Guess the Correlation Coefficient
 ========================================================
+
+![app_pic](https://raw.githubusercontent.com/xcheng0907/DataProductProject/master/Slides/app_pic.png) 
+
 author: Xiang (Sean) Cheng
 date: 3/26/2016
+
 
 
 Shiny: the tool to build this app
@@ -18,7 +22,8 @@ Shiny is awesome!
 
 The app: Guess the Correlation
 ========================================================
-![app_pic](https://raw.githubusercontent.com/xcheng0907/DataProductProject/master/Slides/app_pic.jpg) 
+
+![app_pic](https://raw.githubusercontent.com/xcheng0907/DataProductProject/master/Slides/app_pic.png) 
 
 Basic Idea
 
