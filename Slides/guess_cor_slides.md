@@ -1,37 +1,26 @@
-guess_cor_slides
+Shiny app: Guess the Correlation Coefficient
 ========================================================
-author: 
-date: 
+author: Xiang (Sean) Cheng
+date: 3/26/2016
 
-First Slide
-========================================================
 
-For more details on authoring R presentations click the
-**Help** button on the toolbar.
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Slide With Code
+Shiny: the tool to build this app
 ========================================================
 
+![slidify_logo](https://f.cloud.github.com/assets/346288/650134/894eadd0-d455-11e2-8be5-8d463050f4ef.png) 
 
-```r
-summary(cars)
-```
+Shiny is awesome!
 
-```
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
-```
+- Easy to pick up for R user
+- Structured code
+- Easy to test and deploy
+
+
+The app: Guess the Correlation
+========================================================
+Basic Idea
 
 Slide With Plot
 ========================================================
 
-![plot of chunk unnamed-chunk-2](guess_cor_slides-figure/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-1](guess_cor_slides-figure/unnamed-chunk-1-1.png)

@@ -1,24 +1,24 @@
-guess_cor_slides
+Shiny app: Guess the Correlation Coefficient
 ========================================================
-author: 
-date: 
+author: Xiang (Sean) Cheng
+date: 3/26/2016
 
-First Slide
-========================================================
 
-For more details on authoring R presentations click the
-**Help** button on the toolbar.
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-Slide With Code
+Shiny: the tool to build this app
 ========================================================
 
-```{r}
-summary(cars)
-```
+![slidify_logo](https://f.cloud.github.com/assets/346288/650134/894eadd0-d455-11e2-8be5-8d463050f4ef.png) 
+
+Shiny is awesome!
+
+- Easy to pick up for R user
+- Structured code
+- Easy to test and deploy
+
+
+The app: Guess the Correlation
+========================================================
+Basic Idea
 
 Slide With Plot
 ========================================================
