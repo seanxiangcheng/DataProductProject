@@ -16,13 +16,12 @@ This peer assessed assignment has two parts. First, you will create a Shiny appl
 * Share your server.R and ui.R code on github
 
 * The application must include the following:
-
-- Some form of input (widget: textbox, radio button, checkbox, ...)
-- Some operation on the ui input in sever.R
-- Some reactive output displayed as a result of server calculations
-- You must also include enough documentation so that a novice user could use your application.
-- The documentation should be at the Shiny website itself. Do not post to an external link.
-- The Shiny application in question is entirely up to you. However, if you're having trouble coming up with ideas, you could start from the simple prediction algorithm done in class and build a new algorithm on one of the R datasets packages. Please make the package simple for the end user, so that they don't need a lot of your prerequisite knowledge to evaluate your application. You should emphasize a simple project given the short time frame.
+	+ Some form of input (widget: textbox, radio button, checkbox, ...)
+	+ Some operation on the ui input in sever.R
+	+ Some reactive output displayed as a result of server calculations
+	+ You must also include enough documentation so that a novice user could use your application.
+	+ The documentation should be at the Shiny website itself. Do not post to an external link.
+	+ The Shiny application in question is entirely up to you. However, if you're having trouble coming up with ideas, you could start from the simple prediction algorithm done in class and build a new algorithm on one of the R datasets packages. Please make the package simple for the end user, so that they don't need a lot of your prerequisite knowledge to evaluate your application. You should emphasize a simple project given the short time frame.
 
 
 
@@ -40,11 +39,11 @@ Here's what you need
 
 * Your presentation must satisfy the following
 
-- It must be done in Slidify or Rstudio Presenter
-- It must be 5 pages
-- It must be hosted on github or Rpubs
-- It must contained some embedded R code that gets run when slidifying the document
-- Notice to publish your slidify presentation to github or Rpubs, there's the publish command. This link outlines how to do it (it's one line).
+1. It must be done in Slidify or Rstudio Presenter
+2. It must be 5 pages
+3. It must be hosted on github or Rpubs
+4. It must contained some embedded R code that gets run when slidifying the document
+5. Notice to publish your slidify presentation to github or Rpubs, there's the publish command. This link outlines how to do it (it's one line).
 
 http://slidify.org/publish.html
 
