@@ -38,12 +38,11 @@ Here's what you need
 * A link to your github or Rpubs presentation pasted into the provided text box
 
 * Your presentation must satisfy the following
-
-1. It must be done in Slidify or Rstudio Presenter
-2. It must be 5 pages
-3. It must be hosted on github or Rpubs
-4. It must contained some embedded R code that gets run when slidifying the document
-5. Notice to publish your slidify presentation to github or Rpubs, there's the publish command. This link outlines how to do it (it's one line).
+	+ It must be done in Slidify or Rstudio Presenter
+	+ It must be 5 pages
+	+ It must be hosted on github or Rpubs
+	+ It must contained some embedded R code that gets run when slidifying the document
+	+ Notice to publish your slidify presentation to github or Rpubs, there's the publish command. This link outlines how to do it (it's one line).
 
 http://slidify.org/publish.html
 
