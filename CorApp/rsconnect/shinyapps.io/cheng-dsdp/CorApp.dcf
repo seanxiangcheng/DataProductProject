@@ -2,8 +2,8 @@ name: CorApp
 account: cheng-dsdp
 server: shinyapps.io
 appId: 90790
-bundleId: 404298
+bundleId: 404303
 url: https://cheng-dsdp.shinyapps.io/CorApp/
-when: 1459114916.0109
+when: 1459115769.6625
 asMultiple: FALSE
 asStatic: FALSE

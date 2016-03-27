@@ -11,7 +11,7 @@ shinyUI(pageWithSidebar(
     helpText('Step 3: Check your guess by clicking \'Check guess\''),
     br(),
     br(),
-    numericInput('guess', 'Enter your guess:', 0.01, step = 0.03),
+    numericInput('guess', 'Enter your guess:', 0.01, step = 0.02),
     actionButton('submit', 'Check Guess'),
     br(),
     br(),

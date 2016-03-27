@@ -7,7 +7,7 @@ shinyServer(function(input, output){
   randomdata <- reactive({  
     rawRanData <- cbind(X = rnorm(1000), Y = rnorm(1000))
     genCorr <- runif(1, -1, 1)
-    
+    if( abs(genCorr)<0.2 ) genCorr <- sign(genCorr)*0.2+genCorr
     mat <- diag(1, 2, 2)
     delta <- row(mat) - col(mat)
     mat[delta != 0] <- genCorr
@@ -26,7 +26,7 @@ shinyServer(function(input, output){
   output$plot <- renderPlot({
     if(input$NewPlot == 0){
       p <- ggplot(randomdata(), aes(x = X, y = Y))
-      p <- p + theme_bw(base_size = 20) + geom_point()
+      p <- p + theme_bw(base_size = 28) + geom_point()
       
       if(input$bestfit == TRUE){
         p <- p + stat_smooth(data = randomdata(), method = lm, se = FALSE, size = 1)
@@ -35,9 +35,9 @@ shinyServer(function(input, output){
     }
     else if(input$NewPlot != 0){
       p <- ggplot(randomdata(), aes(x = X, y = Y))
-      p <- p + theme_bw(base_size = 24) + geom_point()
+      p <- p + theme_bw(base_size = 28) + geom_point()
       if(input$bestfit == TRUE){
-        p <- p + stat_smooth(data = randomdata(), method = lm, se = FALSE, size = 1)
+        p <- p + stat_smooth(data = randomdata(), method = lm, se = FALSE, size = 2)
       }
       print(p)
       
@@ -50,18 +50,18 @@ shinyServer(function(input, output){
       cat('<<--- Enter your Guess in the box to the left!\n')
     }
     isolate({
-        if(((input$guess > corData() - .03 & input$guess < corData() + .03))) {
+        if(((input$guess > corData() - .02 & input$guess < corData() + .02))) {
           cat('   Good job!\n', '  Correlation = ', round(corData(), 2))
         } else if(corData()*input$guess<0 & input$submit!=0) {
           cat('Watch out! Wrong sign! Try Again!')
         } else if(abs(input$guess)>1 & input$submit!=0){
           cat('Are you re-inventing correlation?! :) The number should be between -1 and 1 !!!')
         } 
-        else{ if((corData() > 0 & input$guess < corData() - .03 & input$submit != 0) |
-                   (corData() < 0 & input$guess > corData() - .03 & input$submit != 0)){
+        else{ if((corData() > 0 & input$guess < corData() - .02 & input$submit != 0) |
+                   (corData() < 0 & input$guess > corData() - .02 & input$submit != 0)){
           cat('You underestimated the correlation! Try Again!')
-        }  else {  if((corData() > 0 & input$guess > corData() + .03 & input$guess != 0) |
-                      (corData() < 0 & input$guess < corData() + .03 & input$guess != 0)){ 
+        }  else {  if((corData() > 0 & input$guess > corData() + .02 & input$guess != 0) |
+                      (corData() < 0 & input$guess < corData() + .02 & input$guess != 0)){ 
           cat('You overestimated the correlation! Try Again!')
         }}}
         
